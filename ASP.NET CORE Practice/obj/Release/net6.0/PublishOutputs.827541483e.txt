@@ -1,0 +1,12 @@
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\ASP.NET CORE Practice.exe
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\ASP.NET CORE Practice.dll
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\ASP.NET CORE Practice.deps.json
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\ASP.NET CORE Practice.runtimeconfig.json
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\ASP.NET CORE Practice.pdb
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\System.Net.Http.Formatting.dll
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\TestLibrary.dll
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\PubTmp\Out\TestLibrary.pdb
