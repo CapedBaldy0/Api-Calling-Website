@@ -1,0 +1,24 @@
+D:\Work\ASP.NET CORE Practice\TestLibrary\bin\Debug\net6.0\TestLibrary.deps.json
+D:\Work\ASP.NET CORE Practice\TestLibrary\bin\Debug\net6.0\TestLibrary.dll
+D:\Work\ASP.NET CORE Practice\TestLibrary\bin\Debug\net6.0\TestLibrary.pdb
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\TestLibrary.csproj.AssemblyReference.cache
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\TestLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\TestLibrary.AssemblyInfoInputs.cache
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\TestLibrary.AssemblyInfo.cs
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\TestLibrary.csproj.CoreCompileInputs.cache
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\TestLibrary.dll
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\refint\TestLibrary.dll
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\TestLibrary.pdb
+D:\Work\ASP.NET CORE Practice\TestLibrary\obj\Debug\net6.0\ref\TestLibrary.dll
+D:\Work\Api-Calling-Website\TestLibrary\bin\Debug\net6.0\TestLibrary.deps.json
+D:\Work\Api-Calling-Website\TestLibrary\bin\Debug\net6.0\TestLibrary.dll
+D:\Work\Api-Calling-Website\TestLibrary\bin\Debug\net6.0\TestLibrary.pdb
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\TestLibrary.csproj.AssemblyReference.cache
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\TestLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\TestLibrary.AssemblyInfoInputs.cache
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\TestLibrary.AssemblyInfo.cs
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\TestLibrary.csproj.CoreCompileInputs.cache
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\TestLibrary.dll
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\refint\TestLibrary.dll
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\TestLibrary.pdb
+D:\Work\Api-Calling-Website\TestLibrary\obj\Debug\net6.0\ref\TestLibrary.dll

@@ -1,0 +1,103 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    
+}
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div class="card h-100">
+            <img src="Resources\cat.png" class="card-img-top" alt="cat image">
+            <div class="card-body">
+                <h5 class="card-title">Get Random cat facts</h5>
+                <p class="card-text">@Model.catFact</p>
+                <form method="post" asp-page="Index">
+                    <input class="btn btn-primary" type="submit" value="Get new fact" asp-page-handler="UpdateCatFact" />
+                </form>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <img src="Resources\bored.jpg" class="card-img-top" alt="bored person">
+            <div class="card-body">
+                <h5 class="card-title">Get Random activity to do</h5>
+                <p class="card-text">@Model.bored</p>
+                <form method="post" asp-page="Index">
+                    <input class="btn btn-primary" type="submit" value="Get new activity" asp-page-handler="UpdateActivity" />
+                </form>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <img src="@Model.dogImage" class="card-img-top" alt="dog image">
+            <div class="card-body">
+                <h5 class="card-title">Get Random Dog Images</h5>
+                <p class="card-text">click to change the image of a random Dog</p>
+                <form method="post" asp-page="Index">
+                    <input class="btn btn-primary" type="submit" value="Get new image" asp-page-handler="UpdateDogImage" />
+                </form>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <img src="Resources\person.jpg" class="card-img-top" alt="unknown person">
+            <div class="card-body">
+                <h5 class="card-title">Guess ??? based on name</h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="guess" id="inlineRadio1" value="option1" checked>
+                    <label class="form-check-label" for="inlineRadio1">Gender</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="guess" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Age</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="guess" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3">Nationality</label>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="ex: Maria" aria-label="Predict based on name">
+                </div>
+                <form method="post" asp-page="Index">
+                    <input class="btn btn-primary" type="submit" value="Get new guess" asp-page-handler="UpdateDogImage"/>
+                </form>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100">
+            <img src="Resources\chuck-norris.jpg" class="card-img-top" alt="Chuck Norris image">
+            <div class="card-body">
+                <h5 class="card-title">Chuck Norris Facts</h5>
+                <p class="card-text">@Model.norisFact</p>
+                <form method="post" asp-page="Index">
+                    <input class="btn btn-primary" type="submit" value="Get new fact" asp-page-handler="UpdateNorisFact" />
+                </form>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+</div>
