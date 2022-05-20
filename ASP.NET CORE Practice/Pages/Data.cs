@@ -6,13 +6,17 @@
         public static string Act { get; set; }
         public static string Dog { get; set; }
         public static string Noris { get; set; }
+        public static string Guess { get; set; }
+        public static string Number { get; set; }
 
-        public static void UpdateData(string catfact, string activity, string dogimage, string noris)
+        public static void UpdateData(string catfact, string activity, string dogimage, string noris, string guess, string num)
         {
             Cat = catfact;
             Act = activity;
             Dog = dogimage;
             Noris = noris;
+            Guess = guess;
+            Number = num;
         }
     }
 }

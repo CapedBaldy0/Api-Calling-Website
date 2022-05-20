@@ -11,6 +11,16 @@ namespace ASP.NET_CORE_Practice.Pages
         public string bored { get; set; }
         public string dogImage { get; set; } = "Resources/dog.jpg";
         public string norisFact { get; set; }
+        public string guess { get; set; } = "the guess will show here";
+        public string number { get; set; }
+
+        [BindProperty]
+        public string option { get; set; }
+
+        public string[] options = new[] { "Gender", "Age", "Nationality" };
+
+        [BindProperty]
+        public string guessName { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -22,39 +32,65 @@ namespace ASP.NET_CORE_Practice.Pages
             catFact = await TestLibrary.ApiProcessor.LoadCatFact();
             bored = await TestLibrary.ApiProcessor.LoadActivity();
             norisFact = await TestLibrary.ApiProcessor.LoadNorisFact();
-            Data.UpdateData(catFact, bored, dogImage, norisFact);
+            number = await TestLibrary.ApiProcessor.LoadNumbersFact();
+            Data.UpdateData(catFact, bored, dogImage, norisFact, guess, number);
         }
+        public void getData()
+        {
+            guess = Data.Guess;
+            catFact = Data.Cat;
+            dogImage = Data.Dog;
+            bored = Data.Act;
+            norisFact = Data.Noris;
+            number = Data.Number;
+        }
+
         public async Task OnPostUpdateCatFact()
         {
-            norisFact = Data.Noris;
-            bored = Data.Act;
+            getData();
             catFact = await TestLibrary.ApiProcessor.LoadCatFact();
-            dogImage = Data.Dog;
-            Data.UpdateData(catFact, bored, dogImage, norisFact);
+            Data.UpdateData(catFact, bored, dogImage, norisFact, guess, number);
         }
         public async Task OnPostUpdateActivity()
         {
-            norisFact = Data.Noris;
-            catFact = Data.Cat;
+            getData();
             bored = await TestLibrary.ApiProcessor.LoadActivity();
-            dogImage = Data.Dog;
-            Data.UpdateData(catFact, bored, dogImage, norisFact);
+            Data.UpdateData(catFact, bored, dogImage, norisFact, guess, number);
         }
         public async Task OnPostUpdateDogImage()
         {
-            norisFact = Data.Noris;
-            catFact = Data.Cat;
+            getData();
             dogImage = await TestLibrary.ApiProcessor.LoadDogImage();
-            bored = Data.Act;
-            Data.UpdateData(catFact, bored, dogImage, norisFact);
+            Data.UpdateData(catFact, bored, dogImage, norisFact, guess, number);
         }
         public async Task OnPostUpdateNorisFact()
         {
-            catFact = Data.Cat;
-            dogImage = Data.Dog;
-            bored = Data.Act;
+            getData();
             norisFact = await TestLibrary.ApiProcessor.LoadNorisFact();
-            Data.UpdateData(catFact, bored, dogImage, norisFact);
+            Data.UpdateData(catFact, bored, dogImage, norisFact, guess, number);
+        }
+        public async Task OnPostUpdateGuessName()
+        {
+            getData();
+            if (option == "Gender")
+            {
+                guess = await TestLibrary.ApiProcessor.LoadGuessGender(guessName);
+            }
+            if (option == "Age")
+            {
+                guess = await TestLibrary.ApiProcessor.LoadGuessAge(guessName);
+            }
+            if (option == "Nationality")
+            {
+                guess = await TestLibrary.ApiProcessor.LoadGuessNationality(guessName);
+            }
+            Data.UpdateData(catFact, bored, dogImage, norisFact, guess, number);
+        }
+        public async Task OnPostUpdateNumbersFact()
+        {
+            getData();
+            number = await TestLibrary.ApiProcessor.LoadNumbersFact();
+            Data.UpdateData(catFact, bored, dogImage, norisFact, guess, number);
         }
     }
 }

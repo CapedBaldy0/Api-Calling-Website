@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H347+ySKZhu9IGc92aLj9dQwWWSxeVMbiIOb6D9GUNs=",
+  "Hash": "7Uq7A3fDx7X67yF1POGXi+qEaPXiic7KbnbSDPdOnDM=",
   "Source": "ASP.NET CORE Practice",
   "BasePath": "_content/ASP.NET CORE Practice",
   "Mode": "Default",
@@ -1836,23 +1836,6 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\Resources\\banana.png",
-      "SourceId": "ASP.NET CORE Practice",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\",
-      "BasePath": "_content/ASP.NET CORE Practice",
-      "RelativePath": "Resources/banana.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Resources\\banana.png"
-    },
-    {
       "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\Resources\\bored.jpg",
       "SourceId": "ASP.NET CORE Practice",
       "SourceType": "Discovered",
@@ -1921,12 +1904,12 @@
       "OriginalItemSpec": "wwwroot\\Resources\\dog.jpg"
     },
     {
-      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\Resources\\gum_gum.png",
+      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\Resources\\numbers.jpg",
       "SourceId": "ASP.NET CORE Practice",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\",
       "BasePath": "_content/ASP.NET CORE Practice",
-      "RelativePath": "Resources/gum_gum.png",
+      "RelativePath": "Resources/numbers.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1935,15 +1918,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Resources\\gum_gum.png"
+      "OriginalItemSpec": "wwwroot\\Resources\\numbers.jpg"
     },
     {
-      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\Resources\\heart.png",
+      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\Resources\\person.png",
       "SourceId": "ASP.NET CORE Practice",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\",
       "BasePath": "_content/ASP.NET CORE Practice",
-      "RelativePath": "Resources/heart.png",
+      "RelativePath": "Resources/person.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1952,41 +1935,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Resources\\heart.png"
-    },
-    {
-      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\Resources\\pear.png",
-      "SourceId": "ASP.NET CORE Practice",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\",
-      "BasePath": "_content/ASP.NET CORE Practice",
-      "RelativePath": "Resources/pear.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Resources\\pear.png"
-    },
-    {
-      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\Resources\\person.jpg",
-      "SourceId": "ASP.NET CORE Practice",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\",
-      "BasePath": "_content/ASP.NET CORE Practice",
-      "RelativePath": "Resources/person.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Resources\\person.jpg"
+      "OriginalItemSpec": "wwwroot\\Resources\\person.png"
     }
   ]
 }

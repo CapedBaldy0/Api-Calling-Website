@@ -2,12 +2,12 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    
+
 }
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
-        <div class="card h-100">
+        <div class="card h-100 border-primary">
             <img src="Resources\cat.png" class="card-img-top" alt="cat image">
             <div class="card-body">
                 <h5 class="card-title">Get Random cat facts</h5>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="col">
-        <div class="card h-100">
+        <div class="card h-100 border-danger">
             <img src="Resources\bored.jpg" class="card-img-top" alt="bored person">
             <div class="card-body">
                 <h5 class="card-title">Get Random activity to do</h5>
@@ -39,7 +39,23 @@
     </div>
 
     <div class="col">
-        <div class="card h-100">
+        <div class="card h-100 border-success">
+            <img src="Resources\chuck-norris.jpg" class="card-img-top" alt="Chuck Norris image">
+            <div class="card-body">
+                <h5 class="card-title">Chuck Norris Facts</h5>
+                <p class="card-text">@Model.norisFact</p>
+                <form method="post" asp-page="Index">
+                    <input class="btn btn-primary" type="submit" value="Get new fact" asp-page-handler="UpdateNorisFact" />
+                </form>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">API used - <a href="https://api.chucknorris.io/jokes/random" target="_blank">https://api.chucknorris.io/jokes/random</a></small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 border-warning">
             <img src="@Model.dogImage" class="card-img-top" alt="dog image">
             <div class="card-body">
                 <h5 class="card-title">Get Random Dog Images</h5>
@@ -55,47 +71,49 @@
     </div>
 
     <div class="col">
-        <div class="card h-100">
-            <img src="Resources\person.jpg" style="height: 400px" class="card-img-top" alt="unknown person">
+        <div class="card h-100 border-light">
+            <img src="Resources\person.png" class="card-img-top" alt="unknown person">
             <div class="card-body">
                 <h5 class="card-title">Guess ??? based on name</h5>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="guess" id="inlineRadio1" value="option1" checked>
-                    <label class="form-check-label" for="inlineRadio1">Gender</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="guess" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2">Age</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="guess" id="inlineRadio3" value="option3">
-                    <label class="form-check-label" for="inlineRadio3">Nationality</label>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="ex: Maria" aria-label="Predict based on name">
-                </div>
-                <form method="post" asp-page="Index">
-                    <input class="btn btn-primary" type="submit" value="Get new guess" asp-page-handler="UpdateDogImage"/>
+                <form method="post">
+                    @foreach (var op in Model.options)
+                    {
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" asp-for="option" type="radio" value="@op"/>
+                            <label class="form-check-label">@op</label>
+                        </div>
+                    }
+                    <form class="form-inline m-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control d-inline" placeholder="ex: Maria" asp-for="guessName" aria-label="@Model.guessName">
+                            <form method="post" asp-page="Index">
+                                <input class="btn btn-primary w-100" type="submit" value="Get new guess" asp-page-handler="UpdateGuessName" />
+                            </form>
+                        </div>
+                    </form>
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="@Model.guess">
                 </form>
             </div>
             <div class="card-footer">
-                <small class="text-muted">API used - <a href=""></a></small>
+                <small class="text-muted">API used - <a href="https://api.agify.io/?name=jojo" target="_blank">https://api.agify.io/?name=jojo</a></small><br />
+                <small class="text-muted">API used - <a href="https://api.genderize.io/?name=jojo" target="_blank">https://api.genderize.io/?name=jojo</a></small><br />
+                <small class="text-muted">API used - <a href="https://api.nationalize.io/?name=jojo" target="_blank">https://api.nationalize.io/?name=jojo</a></small>
             </div>
         </div>
     </div>
 
     <div class="col">
-        <div class="card h-100">
-            <img src="Resources\chuck-norris.jpg" class="card-img-top" alt="Chuck Norris image">
+        <div class="card h-100 border-primary">
+            <img src="Resources\numbers.jpg" class="card-img-top" alt="Numbers image">
             <div class="card-body">
-                <h5 class="card-title">Chuck Norris Facts</h5>
-                <p class="card-text">@Model.norisFact</p>
+                <h5 class="card-title">Get Random cat facts</h5>
+                <p class="card-text">@Model.number</p>
                 <form method="post" asp-page="Index">
-                    <input class="btn btn-primary" type="submit" value="Get new fact" asp-page-handler="UpdateNorisFact" />
+                    <input class="btn btn-primary" type="submit" value="Get new fact" asp-page-handler="UpdateNumbersFact" />
                 </form>
             </div>
             <div class="card-footer">
-                <small class="text-muted">API used - <a href="https://api.chucknorris.io/jokes/random" target="_blank">https://api.chucknorris.io/jokes/random</a></small>
+                <small class="text-muted">API used - <a href="http://numbersapi.com/random/trivia?json" target="_blank">http://numbersapi.com/random/trivia?json</a></small>
             </div>
         </div>
     </div>

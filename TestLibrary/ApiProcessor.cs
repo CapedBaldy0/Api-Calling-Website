@@ -80,5 +80,85 @@ namespace TestLibrary
                 }
             }
         }
+
+        public static async Task<string> LoadGuessAge(string name)
+        {
+            string url = "https://api.agify.io/?name=" + name;
+
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    GuessAgeModel obj = await response.Content.ReadAsAsync<GuessAgeModel>();
+                    return obj.Age;
+                }
+                else
+                {
+                    return "Data not Found. Something went wrong";
+                }
+            }
+        }
+
+        public static async Task<string> LoadGuessGender(string name)
+        {
+            string url = "https://api.genderize.io/?name=" + name;
+
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    GuessGenderModel obj = await response.Content.ReadAsAsync<GuessGenderModel>();
+                    return $"Gender: {obj.Gender} | Probability: {obj.Probability.ToString()}";
+                }
+                else
+                {
+                    return "Data not Found. Something went wrong";
+                }
+            }
+        }
+
+        public static async Task<string> LoadGuessNationality(string name)
+        {
+            string url = "https://api.nationalize.io/?name=" + name;
+
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    GuessNationalityModel obj = await response.Content.ReadAsAsync<GuessNationalityModel>();
+                    string res = "";
+                    foreach(var country in obj.Country)
+                    {
+                        if (country.Country_id != "")
+                        {
+                            res = res + $"{country.Country_id}: {String.Format("{0:0.00}", country.Probability)} | ";
+                        }
+                    }
+                    return res;
+                }
+                else
+                {
+                    return "Data not Found. Something went wrong";
+                }
+            }
+        }
+
+        public static async Task<string> LoadNumbersFact()
+        {
+            string url = "http://numbersapi.com/random/trivia?json";
+
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    NumberModel obj = await response.Content.ReadAsAsync<NumberModel>();
+                    return obj.Text;
+                }
+                else
+                {
+                    return "Data not Found. Something went wrong";
+                }
+            }
+        }
     }
 }
