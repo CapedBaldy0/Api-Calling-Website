@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NvcZ2GFHPbgQvxOrYMr2UK7yBRsLviyn3yi2Gl12t1k=",
+  "Hash": "H347+ySKZhu9IGc92aLj9dQwWWSxeVMbiIOb6D9GUNs=",
   "Source": "ASP.NET CORE Practice",
   "BasePath": "_content/ASP.NET CORE Practice",
   "Mode": "Default",
@@ -916,6 +916,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min2.css",
+      "SourceId": "ASP.NET CORE Practice",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\",
+      "BasePath": "_content/ASP.NET CORE Practice",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap.min2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min2.css"
     },
     {
       "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
