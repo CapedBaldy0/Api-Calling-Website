@@ -1,0 +1,6 @@
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\win-x64\PubTmp\Out\appsettings.Development.json
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\win-x64\PubTmp\Out\appsettings.json
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\win-x64\PubTmp\Out\ASP.NET CORE Practice.pdb
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\win-x64\PubTmp\Out\aspnetcorev2_inprocess.dll
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\win-x64\PubTmp\Out\TestLibrary.pdb
+D:\Work\Api-Calling-Website\ASP.NET CORE Practice\obj\Release\net6.0\win-x64\PubTmp\Out\ASP.NET CORE Practice.exe

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NjI7JoguvH8iHGqi4jujO8L3+K/DgTcnp7YcDKvk9/g=",
+  "Hash": "89m4grUpY/sU3fzMWviXUr4eecq3v0mMvUVTLLg+rwE=",
   "Source": "ASP.NET CORE Practice",
   "BasePath": "_content/ASP.NET CORE Practice",
   "Mode": "Default",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "C:\\Users\\Jojo\\.nuget\\packages\\bootstrap\\5.1.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\scopedcss\\bundle\\ASP.NET CORE Practice.styles.css",
+      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\ASP.NET CORE Practice.styles.css",
       "SourceId": "ASP.NET CORE Practice",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\",
       "BasePath": "_content/ASP.NET CORE Practice",
       "RelativePath": "ASP.NET CORE Practice.styles.css",
       "AssetKind": "All",
@@ -779,13 +779,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\scopedcss\\bundle\\ASP.NET CORE Practice.styles.css"
+      "OriginalItemSpec": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\ASP.NET CORE Practice.styles.css"
     },
     {
-      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\ASP.NET CORE Practice.bundle.scp.css",
+      "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\ASP.NET CORE Practice.bundle.scp.css",
       "SourceId": "ASP.NET CORE Practice",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ASP.NET CORE Practice",
       "RelativePath": "ASP.NET CORE Practice.bundle.scp.css",
       "AssetKind": "All",
@@ -796,7 +796,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\ASP.NET CORE Practice.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\ASP.NET CORE Practice.bundle.scp.css"
     },
     {
       "Identity": "D:\\Work\\Api-Calling-Website\\ASP.NET CORE Practice\\wwwroot\\css\\site.css",
